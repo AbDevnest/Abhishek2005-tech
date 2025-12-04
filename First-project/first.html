@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+
+ <style>
+  * {
+   padding: 0px;
+   margin: 0px;
+   box-sizing: border-box;
+  }
+
+  body {
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .main-div {
+   width: 1000px;
+   height: 540px;
+   border: 2px solid black;
+   background-color: rgb(250, 249, 249);
+  }
+
+  .nav-logo {
+   width: 100%;
+   height: 100px;
+   color: rgb(95, 95, 186);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  header h1 {
+   font-size: 30px;
+   letter-spacing: 2px;
+   font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .nav {
+   width: 100%;
+   height: 40px;
+  }
+
+  .navbar-list {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   height: 100%;
+  }
+
+  .navbar-item {
+   padding: 0 20px;
+   font-size: 18px;
+   height: 100%;
+   line-height: 40px;
+   text-align: center;
+   width: 200px;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+   border: 1px solid black;
+   border-right: none;
+   color: black;
+   text-decoration: none;
+  }
+
+  .navbar-item:first-child {
+   border-left: none;
+  }
+
+  .navbar-item:hover {
+   background-color: rgb(95, 95, 186);
+   color: white;
+  }
+
+  /* section first */
+
+  .sec-first {
+   height: 200px;
+   display: flex;
+   border-bottom: 1px solid black;
+  }
+
+  .left-side {
+   width: 250px;
+   height: 200px;
+
+  }
+
+  .navbar-list2 {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   width: 100%;
+   height: 200px;
+  }
+
+  .navbar-item2 {
+   font-size: 18px;
+   width: 100%;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+   color: black;
+   border-right: 1px solid black;
+   border-bottom: 1px solid black;
+  }
+
+  .navbar-item2 a {
+   text-decoration: none;
+   color: black;
+  }
+
+  .navbar-item2:hover,
+  .navbar-item2:hover a {
+   background-color: rgb(95, 95, 186);
+   color: white;
+  }
+
+  /* right side css */
+  .right-side {
+   width: 750px;
+   height: 200px;
+   border-left: none;
+   border-right: none;
+   float: right;
+  }
+
+  img {
+   border-bottom: 1px solid black;
+  }
+
+  .client-div {
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   border-bottom: 1px solid black;
+  }
+
+  .client-images {
+   width: 100%;
+   height: 100px;
+   display: flex;
+  }
+
+  .sec-third {
+   justify-content: center;
+  }
+
+  .navbar-list3 {
+   display: flex;
+   justify-content: center;
+  }
+
+  .navbar-item3 {
+   list-style: none;
+   margin:15px 0px;
+   padding: 0px 20px;
+   border-right:2px solid black;
+  }
+
+  .navbar-item3:last-child {
+   border: none;
+  }
+
+  .navbar-item3:hover,
+  .navbar-item3:hover a {
+   background-color: rgb(95, 95, 186);
+   color: white;
+  }
+
+  .navbar-item3 a {
+   text-decoration: none;
+   color: black;
+  }
+ </style>
+</head>
+
+<body>
+ <div class="main-div">
+  <header>
+   <div class="nav-logo">
+    <h1>WSCUBE TECH</h1>
+   </div>
+
+   <div class="nav">
+    <nav class="navbar-list">
+     <a href="#" class="navbar-item">Home</a>
+     <a href="#" class="navbar-item">About</a>
+     <a href="#" class="navbar-item">Course</a>
+     <a href="#" class="navbar-item">Gallery</a>
+     <a href="#" class="navbar-item">Contact Us</a>
+    </nav>
+   </div>
+  </header>
+
+  <div class="sec-first">
+   <div class="left-side">
+    <ul class="navbar-list2">
+     <li class="navbar-item2"><a href="#">Home</a></li>
+     <li class="navbar-item2"><a href="#">About</a></li>
+     <li class="navbar-item2"><a href="#">Course</a></li>
+     <li class="navbar-item2"><a href="#">Gallery</a></li>
+     <li class="navbar-item2"><a href="#">Contact Us</a></li>
+    </ul>
+   </div>
+
+   <div class="right-side">
+    <div class="">
+     <img src="Img/office img 293r2.png" width="100%" height="200px" alt="">
+    </div>
+   </div>
+  </div>
+
+  <div class="sec-second">
+   <div class="client-div">
+    <h2>Our Clients</h2>
+   </div>
+   <div class="client-images">
+    <img src="Img/qarea-inc-9fBC6zLUN7Q-unsplash.jpg" width="333.33px" height="100px" alt="">
+
+    <img style="border-right:1px solid black; border-left:1px solid black;"
+     src="Img/rich-smith-lVVs5skyWoo-unsplash.jpg" width="333.33px" height="100px" alt="">
+
+    <img src="Img/scott-webb-bmmcfZqSjBU-unsplash.jpg" width="333.33px" height="100px" alt="">
+
+   </div>
+  </div>
+
+  <div class="sec-third">
+   <ul class="navbar-list3">
+    <li class="navbar-item3"><a href="#">Home</a></li>
+    <li class="navbar-item3"><a href="#">About</a></li>
+    <li class="navbar-item3"><a href="#">Course</a></li>
+    <li class="navbar-item3"><a href="#">Gallery</a></li>
+    <li class="navbar-item3"><a href="#">Contact Us</a></li>
+   </ul>
+  </div>
+ </div>
+</body>
+
+</html>
